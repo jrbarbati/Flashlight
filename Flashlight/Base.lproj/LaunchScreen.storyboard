@@ -20,11 +20,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FlashlightLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Avt-t7-s2Z">
                                 <rect key="frame" x="112" y="331" width="150" height="150"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap screen to turn flashlight on and off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clV-78-umG">
+                                <rect key="frame" x="39" y="751" width="296" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="clV-78-umG" firstAttribute="centerX" secondItem="Avt-t7-s2Z" secondAttribute="centerX" id="1XC-r0-9ux"/>
                             <constraint firstItem="Avt-t7-s2Z" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4Db-Kd-N6R"/>
                             <constraint firstItem="Avt-t7-s2Z" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Guh-Tz-4h9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="clV-78-umG" secondAttribute="bottom" constant="6" id="htm-Fa-6ji"/>
                             <constraint firstItem="Avt-t7-s2Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="yg2-Yi-Rfh"/>
                             <constraint firstItem="Avt-t7-s2Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="287" id="zWE-KA-Z08"/>
                         </constraints>
