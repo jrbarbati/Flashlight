@@ -25,15 +25,24 @@ class ViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func buttonPressed(_ sender: UIButton)
+    @IBAction func switchLight(_ sender: UIButton)
     {
         if self.isBlack
         {
-            sender.backgroundColor = .white
-            self.isBlack = false
+            turnLightOn(sender: sender)
             return
         }
-        
+        turnLightOff(sender: sender)
+    }
+    
+    func turnLightOn(sender: UIButton)
+    {
+        sender.backgroundColor = .white
+        self.isBlack = false
+    }
+    
+    func turnLightOff(sender: UIButton)
+    {
         sender.backgroundColor = .black
         self.isBlack = true
     }
