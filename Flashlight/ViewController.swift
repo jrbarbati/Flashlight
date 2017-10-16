@@ -27,24 +27,18 @@ class ViewController: UIViewController
     
     @IBAction func switchLight(_ sender: UIButton)
     {
-        if self.isBlack
-        {
-            turnLightOn(sender: sender)
-            return
-        }
-        turnLightOff(sender: sender)
+        self.isBlack ? turnLightOn(sender) : turnLightOff(sender)
+        self.isBlack = !self.isBlack
     }
     
-    func turnLightOn(sender: UIButton)
+    func turnLightOn(_ button: UIButton)
     {
-        sender.backgroundColor = .white
-        self.isBlack = false
+        button.backgroundColor = .white
     }
     
-    func turnLightOff(sender: UIButton)
+    func turnLightOff(_ button: UIButton)
     {
-        sender.backgroundColor = .black
-        self.isBlack = true
+        button.backgroundColor = .black
     }
 }
 
